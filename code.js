@@ -11,10 +11,9 @@ function divideAndConquerSum(a) {
 
 function msort(x, lo, hi, tmp) {
     if(lo >= hi) return;
-    var mid = Math.floor((lo+hi)/2);
+    var mid = Math.floor((lo+hi)/3);
     msort(x, lo, mid, tmp);
     msort(x, mid+1, hi, tmp);
-    msort(x, mid+2, hi, tmp);
     merge(x, lo, mid, hi, tmp);
     }
 
