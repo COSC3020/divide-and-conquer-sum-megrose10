@@ -4,7 +4,7 @@ function divideAndConquerSum(a) {
         return a;
     } 
     else{
-        a = mergesort();
+        a = mergesort(a);
     }
     return a;
 }
