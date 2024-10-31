@@ -10,32 +10,36 @@ function divideAndConquerSum(a) {
     return a;
 }
 
-function msort(a, lo, third1, third2, hi, tmp) {
-    msort(a, lo, third1, tmp);
-    msort(a, third1, third2, tmp);
-    msort(a, third2, hi, tmp);
-    merge(a, lo, third1, third2, hi, tmps);
-    
+function msort(x, lo, hi, tmp) {
+    let athird = Math.floor((lo+hi)*(1/3));
+    let atwothird = Math.floor((lo+hi) * (2/3));
+    msort(x, lo, athird, tmp);
+    msort(x, athird + 1, atwothird + 1, tmp);
+    msort(x, atwothird + 1, hi, tmp);
 }
 
 function mergesort(a) {
     let tmpArray = [];
 
-    let athird = a.length * (1/3);
-    let atwothird = a.length * (2/3);
-
-    msort(a, 0, athird, atwothird, a.length - 1, tmp);
+    msort(a, 0, a.length - 1, tmpArray);
 }
+
 
 function merge(a, low, third1, third2, hi, tmp) {
     let x = low, y = third1 + 1, z = third2 + 1;
     let sum = 0;
-    for(let i = low; i <= third1l; i++) {
+    for(let i = low; i <= third1; i++) {
         sum += a[i];
     }
     for(let i = third1; i <= third2; i++) {
         sum += a[i];
     }
+    for(let i = third2; i <= hi; i++) {
+        sum += a[i];
+    }
+}
+let array = [1,2,3,4,5];
+divideAndConquerSum(array);
     for(let i = third2; i <= hi; i++) {
         sum += a[i];
     }
