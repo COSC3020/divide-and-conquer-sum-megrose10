@@ -2,6 +2,7 @@ function divideAndConquerSum(a) {
     let alength = a.length;
     if((elementNum == 0) || (elementNum == 1)) {
         return a;
+    }
     else {
         a = mergesort(a);
     }
