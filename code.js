@@ -45,6 +45,7 @@ function merge(a, low, third1, third2, hi, tmp) {
         sum += a[i];
     }
     //console.log(`${sum}`);
+    return sum;
 }
 //let array = [1,2,3,4,5];
 //divideAndConquerSum(array);
