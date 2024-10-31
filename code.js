@@ -1,38 +1,42 @@
 function divideAndConquerSum(a) {
-    let elementNum = a.length;
-    if((elementNum == 0) || (elementNum == 1)){
+    let alength = a.length;
+    if((elementNum == 0) || (elementNum == 1)) {
         return a;
-    } 
-    else{
+    else {
         a = mergesort(a);
     }
+    
     return a;
 }
 
-function msort(x, lo, hi, tmp) {
-    if(lo >= hi) return;
-    var mid = Math.floor((lo+hi)/3);
-    msort(x, lo, mid, tmp);
-    msort(x, mid+1, hi, tmp);
-    merge(x, lo, mid, hi, tmp);
-    }
-
-function mergesort(x) {
-    var tmp = [];
-    msort(x, 0, x.length - 1, tmp);
-}
+function msort(a, lo, third1, third2, hi, tmp) {
+    msort(a, lo, third1, tmp);
+    msort(a, third1, third2, tmp);
+    msort(a, third2, hi, tmp);
+    merge(a, lo, third1, third2, hi, tmps);
     
-function merge(x, lo, mid, hi, tmp) {
-    var a = lo, b = mid + 1;
-    for(var k = lo; k <= hi; k++) {
-    if(a <= mid && (b > hi || x[a] < x[b])) {
-    tmp[k] = x[a++];
-    } 
-    else {
-    tmp[k] = x[b++];
+}
+
+function mergesort() {
+    let tmpArray = [];
+
+    let athird = a.length * (1/3);
+    let atwothird = a.length * (2/3);
+
+    msort(a, 0, athird, atwothird, a.length - 1, tmp);
+}
+
+function merge(a, low, third1, third2, hi, tmp) {
+    let x = low, y = third1 + 1, z = third2 + 1;
+    let sum = 0;
+    for(let i = low; i <= third1, i++) {
+        sum += a[i];
     }
+    for(let i = third1; i <= third2; i++) {
+        sum += a[i];
     }
-    for(var k = lo; k <= hi; k++) {
-    x[k] = tmp[k];
+    for(let i = third2; i <= hi; i++) {
+        sum += a[i];
     }
 }
+
