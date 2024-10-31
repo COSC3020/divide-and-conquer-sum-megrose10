@@ -30,7 +30,7 @@ function mergesort() {
 function merge(a, low, third1, third2, hi, tmp) {
     let x = low, y = third1 + 1, z = third2 + 1;
     let sum = 0;
-    for(let i = low; i <= third1, i++) {
+    for(let i = low; i <= third1l; i++) {
         sum += a[i];
     }
     for(let i = third1; i <= third2; i++) {
