@@ -18,7 +18,7 @@ function msort(a, lo, third1, third2, hi, tmp) {
     
 }
 
-function mergesort() {
+function mergesort(a) {
     let tmpArray = [];
 
     let athird = a.length * (1/3);
