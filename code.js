@@ -7,6 +7,9 @@ function divideAndConquerSum(a) {
     else if(alength == 1) {
         sum = 1; 
     }
+    else if(alength == 2) {
+        sum = a[0] + a[1];
+    }
     else {
         sum = mergearrays(a);
     }
