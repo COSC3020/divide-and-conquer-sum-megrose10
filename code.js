@@ -1,8 +1,11 @@
 function divideAndConquerSum(a) {
     let alength = a.length;
     let sum = 0;
-    if((alength == 0) || (alength == 1)) {
-        return sum;
+    if(alength == 0) {
+        sum = 0;
+    }
+    if else(alength == 1) {
+        sum = 1; 
     }
     else {
         sum = mergearrays(a);
