@@ -4,7 +4,7 @@ function divideAndConquerSum(a) {
     if(alength == 0) {
         sum = 0;
     }
-    if else(alength == 1) {
+    else if(alength == 1) {
         sum = 1; 
     }
     else {
