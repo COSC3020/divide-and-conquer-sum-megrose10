@@ -2,7 +2,7 @@ function divideAndConquerSum(a) {
     let alength = a.length;
     let sum = 0;
     if((alength == 0) || (alength == 1)) {
-        return a;
+        return sum;
     }
     else {
         sum = mergearrays(a);
