@@ -5,7 +5,7 @@ function divideAndConquerSum(a) {
         sum = 0;
     }
     else if(alength == 1) {
-        sum = 1; 
+        sum = a[0]; 
     }
     else if(alength == 2) {
         sum = a[0] + a[1];
@@ -17,24 +17,22 @@ function divideAndConquerSum(a) {
     return sum;
 }
 
-function mseparate(x, lo, hi, tmp) {
+function mseparate(x, lo, hi) {
     //console.log(`${lo}`);
     let athird = Math.floor((lo+hi)*(1/3));
     //console.log(`${athird}`);
     let atwothird = Math.floor((lo+hi) * (2/3));
     //console.log(`${atwothird}`);
-    return merge(x, lo, athird, atwothird, hi, tmp)
+    return merge(x, lo, athird, atwothird, hi)
 }
 
 function mergearrays(a) {
-    let tmpArray = [];
     //console.log(`${a.length}`);
-    return mseparate(a, 0, a.length, tmpArray);
+    return mseparate(a, 0, a.length);
 }
 
 
-function merge(a, low, third1, third2, hi, tmp) {
-    let x = low, y = third1 + 1, z = third2 + 1;
+function merge(a, low, third1, third2, hi) {
     let sum = 0;
     for(let i = low; i < third1; i++) {
         sum += a[i];
@@ -54,6 +52,5 @@ function merge(a, low, third1, third2, hi, tmp) {
     //console.log(`${sum}`);
     return sum;
 }
-//let array = [1,2,3,4,5];
-//divideAndConquerSum(array);
-
+let array = [1,2,3,4,5];
+console.log(`${divideAndConquerSum(array)}`);
