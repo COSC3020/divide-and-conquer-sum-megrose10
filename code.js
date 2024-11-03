@@ -52,5 +52,5 @@ function merge(a, low, third1, third2, hi) {
     //console.log(`${sum}`);
     return sum;
 }
-let array = [1,2,3,4,5];
-console.log(`${divideAndConquerSum(array)}`);
+//let array = [1,2,3,4,5];
+//console.log(`${divideAndConquerSum(array)}`);
