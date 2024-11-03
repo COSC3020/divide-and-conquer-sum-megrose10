@@ -24,6 +24,13 @@ I used ChatGPT to debug and the slides to learn how mergesort works and how it i
 What is the runtime of the algorithm that you implemented? Provide a recurrence
 relation for $T(n)$ as we did for merge sort (you can ignore constant factors)
 and solve it as we did in the lectures. Give the final $\Theta$ complexity.
+Base Cases: 
+$T(n)$ = 0, n = 0
+$T(n)$ = a[0], n= 1
+$T(n)$ = a[0] + a[1], n = 2
+Cases for n length > 2:
+
+
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
