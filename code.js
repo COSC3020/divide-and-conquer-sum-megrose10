@@ -23,13 +23,13 @@ function mseparate(x, lo, hi, tmp) {
     //console.log(`${athird}`);
     let atwothird = Math.floor((lo+hi) * (2/3));
     //console.log(`${atwothird}`);
-    merge(x, lo, athird, atwothird, hi, tmp)
+    return merge(x, lo, athird, atwothird, hi, tmp)
 }
 
 function mergearrays(a) {
     let tmpArray = [];
     //console.log(`${a.length}`);
-    mseparate(a, 0, a.length, tmpArray);
+    return mseparate(a, 0, a.length, tmpArray);
 }
 
 
