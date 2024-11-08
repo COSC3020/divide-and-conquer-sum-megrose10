@@ -17,18 +17,21 @@ in merge sort, I want you to split into *three* sub-arrays at each divide step.
 Hint: Like in the implementation of merge sort, you may need a helper function
 that does the actual recursion.
 
-Used the slides to learn how mergesort works and how it is implemented when sorting arrays. Asked the Ali Torabi if he could look over my past code to see if I was doing this exercise correctly. Found I was not going through recursively so needed to change some of the implementation and delete other functions. Looked at the video of the example you talk about here.
+Used the slides to learn how mergesort works and how it is implemented when sorting arrays. Asked Ali Torabi if he could look over my past code to see if I was doing this exercise correctly. Found I was not going through recursively so needed to change some of the implementation and delete other functions. Looked at your lecture video on solving quicksort.
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
 ## Runtime Analysis
 
 What is the runtime of the algorithm that you implemented? Provide a recurrence
 relation for $T(n)$ as we did for merge sort (you can ignore constant factors)
 and solve it as we did in the lectures. Give the final $\Theta$ complexity.
-Base Cases: 
+T(n) = {
 $T(n)$ = 0, n = 0
 $T(n)$ = a[0], n= 1
 $T(n)$ = a[0] + a[1], n = 2
-Cases for n length > 2: $T(n)$ = 3T(n/3), since there are 3 for loops and the data gets smaller by 1/3.
+$T(n)$ = 3T(n/3), n > 2 }
+since there are 3 for loops and the data gets smaller by 1/3.
 $T(n)$ = 3T(n/3)
        = 3(3T(n/3/3))
        = 9T(n/9)
