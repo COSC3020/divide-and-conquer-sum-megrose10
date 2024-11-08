@@ -17,7 +17,7 @@ in merge sort, I want you to split into *three* sub-arrays at each divide step.
 Hint: Like in the implementation of merge sort, you may need a helper function
 that does the actual recursion.
 
-I used ChatGPT to debug and the slides to learn how mergesort works and how it is implemented when sorting arrays.
+Used the slides to learn how mergesort works and how it is implemented when sorting arrays. Asked the Ali Torabi if he could look over my past code to see if I was doing this exercise correctly. Found I was not going through recursively so needed to change some of the implementation and delete other functions. 
 
 ## Runtime Analysis
 
