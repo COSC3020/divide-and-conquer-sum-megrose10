@@ -17,7 +17,7 @@ in merge sort, I want you to split into *three* sub-arrays at each divide step.
 Hint: Like in the implementation of merge sort, you may need a helper function
 that does the actual recursion.
 
-Used the slides to learn how mergesort works and how it is implemented when sorting arrays. Asked the Ali Torabi if he could look over my past code to see if I was doing this exercise correctly. Found I was not going through recursively so needed to change some of the implementation and delete other functions. 
+Used the slides to learn how mergesort works and how it is implemented when sorting arrays. Asked the Ali Torabi if he could look over my past code to see if I was doing this exercise correctly. Found I was not going through recursively so needed to change some of the implementation and delete other functions. Looked at the video of the example you talk about here.
 
 ## Runtime Analysis
 
@@ -28,9 +28,16 @@ Base Cases:
 $T(n)$ = 0, n = 0
 $T(n)$ = a[0], n= 1
 $T(n)$ = a[0] + a[1], n = 2
-Cases for n length > 2: $T(n)$ = 3T(n/3)
-
-
+Cases for n length > 2: $T(n)$ = 3T(n/3), since there are 3 for loops and the data gets smaller by 1/3.
+$T(n)$ = 3T(n/3)
+       = 3(3T(n/3/3))
+       = 9T(n/9)
+       = 9(3T(n/9/3))
+       = 27T(n/27)
+T(n) = (3^i)T(n/(3^i)), i = log3n
+     = (3^(log3n))T(n/(3^(log3n))
+     = n * T(n/n)
+     = n * T(1)
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
