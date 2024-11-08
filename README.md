@@ -41,6 +41,7 @@ T(n) = (3^i)T(n/(3^i)), i = log3n
      = (3^(log3n))T(n/(3^(log3n))
      = n * T(n/n)
      = n * T(1)
+     = n(T(1)) = n included $\Theta$ (n)
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
