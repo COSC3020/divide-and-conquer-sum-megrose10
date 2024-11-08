@@ -28,7 +28,7 @@ Base Cases:
 $T(n)$ = 0, n = 0
 $T(n)$ = a[0], n= 1
 $T(n)$ = a[0] + a[1], n = 2
-Cases for n length > 2: $T(n)$ = 3$T(n/3)$
+Cases for n length > 2: $T(n)$ = 3T(n/3)
 
 
 
