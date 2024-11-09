@@ -40,9 +40,12 @@ $T(n)$ = 3T(n/3) + n
        = 27T(n/27) + 3n
 T(n) = (3^i)T(n/(3^i)) + in, i = log3n
      = (3^(log3n))T(n/(3^(log3n)) + nlog3n
-     = n * T(n/n) + nlog3n
-     = n * T(1) + nlog3n
-     = n(T(1)) = n + nlog3n ∈ Θ(n log n)
+     = n * T(n/(3^(log3n)) + nlog3n
+     = n(T(n/3^(log3n))) + nlog3n
+     T(n/3^(log3n)) = 1
+     = 3^(log3n) * 1 + nlog3n
+     = n + nlog3n
+     = nlog3n ∈ Θ(n log n)
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
