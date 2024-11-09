@@ -43,9 +43,9 @@ T(n) = (3^i)T(n/(3^i)), i = log3n
      = n * T(n/(3^(log3n))
      = n(T(n/3^(log3n)))
      T(n/3^(log3n)) = 1
-     = 3^(log3n) * 1
-     = n 
-     = i = nlog3n ∈ Θ(n log n)
+     = n3^(log3n) * 1
+     = n^2 
+     = ∈ Θ(n log n)
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
