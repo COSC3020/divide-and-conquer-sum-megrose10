@@ -52,7 +52,7 @@ T(n) = (3^i)T(n/(3^i)) + (((3^i)-1)/2), i = log3n
      T(n/3^(log3n) + ((n-1)/2)) = 1
      = 3^(log3n) * 1
      = n 
-     = ∈ Θ(n) , while merge sort is usually nlogn, this algorithm uses divide and conquer to add so the complexity is different.
+     = ∈ Θ(n) 
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
