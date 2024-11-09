@@ -1,3 +1,4 @@
+
 # Divide and Conquer Sum
 
 In the lectures, we've covered merge sort, which uses a divide-and-conquer
@@ -30,18 +31,18 @@ T(n) = {
 $T(n)$ = 0, n = 0
 $T(n)$ = a[0], n= 1
 $T(n)$ = a[0] + a[1], n = 2
-$T(n)$ = 3T(n/3) + n, n > 2 }
-since there are 3 for loops and the data gets smaller by 1/3.
-$T(n)$ = 3T(n/3) + n
-       = 3(3T(n/3/3) + n/3) + n
-       = 9T(n/9) + 2n
-       = 9(3T(n/9/3) + n/9/3) + 2n
-       = 27T(n/27) + 3n
-T(n) = (3^i)T(n/(3^i)) + in, i = log3n
-     = (3^(log3n))T(n/(3^(log3n)) + nlog3n
-     = n * T(n/n) + nlog3n
-     = n * T(1) + nlog3n
-     = n(T(1)) = n + nlog3n ∈ Θ(n log n)
+$T(n)$ = T(n/3) + n, n > 2 }
+since there are 3 for loops, since this step is with the before combining the values, I removed this off the relation. The data gets smaller by 1/3.
+$T(n)$ = T(n/3) + n
+       = (T(n/3/3) + n/3) + n
+       = T(n/9) + 2n
+       = (T(n/9/3) + n/9/3) + 2n
+       = T(n/27) + 3n
+T(n) = T(n/(3^i)) + in, i = log3n
+     = T(n/(3^(log3n)) + nlog3n
+     = T(n/n) + nlog3n
+     = T(1) + nlog3n
+     = n(T(1)) + nlog3n = n + nlog3n ∈ Θ(n log n)
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
