@@ -20,7 +20,6 @@ that does the actual recursion.
 
 Used the slides to learn how mergesort works and how it is implemented when sorting arrays. Asked Ali Torabi if he could look over my past code to see if I was doing this exercise correctly. Found I was not going through recursively so needed to change some of the implementation. Looked at your lecture video on solving mergesort, and looked at the slides for comparisons. I was unsure how to solve the constant, so I asked chatgpt for a formula, which it gave me a geometric series formula.
 
-I submitted this work Fall 2024.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
